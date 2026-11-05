@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="InternTrack — a simple internship application tracker."
+    />
+    <title>Dashboard | InternTrack</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <!-- Shared sidebar: keep the same links on every page. -->
+      <aside class="sidebar">
+        <a class="brand" href="index.html" aria-label="InternTrack home">
+          <span class="brand-mark" aria-hidden="true">IT</span>
+          <span>Intern<span class="brand-accent">Track</span></span>
+        </a>
+        <p class="nav-label">WORKSPACE</p>
+        <nav class="side-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="index.html" aria-current="page"
+            ><span class="nav-symbol" aria-hidden="true">▦</span> Dashboard</a
+          >
+          <a class="nav-link" href="applications.html"
+            ><span class="nav-symbol" aria-hidden="true">▤</span> My
+            Applications</a
+          >
+          <a class="nav-link" href="application-form.html"
+            ><span class="nav-symbol" aria-hidden="true">＋</span> Add
+            Application</a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="learning-card">
+            <span class="learning-dot"></span>
+            <div>
+              <strong>Frontend stage</strong>
+              <p>Milestone 1 · HTML &amp; CSS</p>
+            </div>
+          </div>
+          <p class="sidebar-note">Built for hands-on practice.</p>
+        </div>
+      </aside>
+
+      <div class="main-area">
+        <header class="topbar">
+          <p class="breadcrumb">Workspace <span>/</span> Dashboard</p>
+          <div class="topbar-right">
+            <span class="demo-indicator">Demo data</span>
+            <div class="avatar" aria-label="Sample user avatar">IT</div>
+          </div>
+        </header>
+
+        <main class="page-content">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">OVERVIEW</p>
+              <h1>Dashboard</h1>
+              <p class="page-subtitle">
+                Your internship search, all in one place.
+              </p>
+            </div>
+            <a class="btn btn-primary" href="application-form.html"
+              ><span aria-hidden="true">＋</span> New Application</a
+            >
+          </div>
+
+          <section class="hero-banner" aria-labelledby="hero-title">
+            <div class="hero-content">
+              <p class="hero-overline">YOUR CAREER JOURNEY</p>
+              <h2 id="hero-title">One step closer to your next opportunity.</h2>
+              <p>
+                Stay organised, monitor your progress, and never lose track of
+                an application.
+              </p>
+              <a class="btn btn-light" href="applications.html"
+                >View applications <span aria-hidden="true">→</span></a
+              >
+            </div>
+            <div class="hero-decor" aria-hidden="true">
+              <div class="decor-card decor-card-back"></div>
+              <div class="decor-card decor-card-front">
+                <div class="decor-line decor-line-short"></div>
+                <div class="decor-line"></div>
+                <div class="decor-line decor-line-medium"></div>
+                <div class="decor-chip">✓</div>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="stats-title">
+            <div class="section-header">
+              <h2 id="stats-title">Application overview</h2>
+              <span class="section-hint">Sample figures</span>
+            </div>
+            <div class="stats-grid">
+              <article class="stat-card">
+                <div class="stat-top">
+                  <span>Total applications</span
+                  ><span class="stat-icon stat-icon-violet" aria-hidden="true"
+                    >▤</span
+                  >
+                </div>
+                <p class="stat-number">8</p>
+                <p class="stat-foot">Across all companies</p>
+              </article>
+              <article class="stat-card">
+                <div class="stat-top">
+                  <span>Interviews</span
+                  ><span class="stat-icon stat-icon-blue" aria-hidden="true"
+                    >◷</span
+                  >
+                </div>
+                <p class="stat-number">2</p>
+                <p class="stat-foot">In the interview stage</p>
+              </article>
+              <article class="stat-card">
+                <div class="stat-top">
+                  <span>Offers</span
+                  ><span class="stat-icon stat-icon-green" aria-hidden="true"
+                    >✓</span
+                  >
+                </div>
+                <p class="stat-number">1</p>
+                <p class="stat-foot">A promising result</p>
+              </article>
+              <article class="stat-card">
+                <div class="stat-top">
+                  <span>Rejections</span
+                  ><span class="stat-icon stat-icon-red" aria-hidden="true"
+                    >×</span
+                  >
+                </div>
+                <p class="stat-number">1</p>
+                <p class="stat-foot">Part of the process</p>
+              </article>
+            </div>
+          </section>
+
+          <div class="dashboard-grid">
+            <section class="panel" aria-labelledby="recent-title">
+              <div class="panel-heading">
+                <div>
+                  <h2 id="recent-title">Recent applications</h2>
+                  <p>Most recently submitted or updated entries</p>
+                </div>
+                <a class="subtle-link" href="applications.html"
+                  >View all <span aria-hidden="true">→</span></a
+                >
+              </div>
+              <div class="recent-list">
+                <div class="recent-row">
+                  <div class="company-icon icon-ms">M</div>
+                  <div class="recent-details">
+                    <strong>Microsoft</strong
+                    ><span>Software Engineering Intern</span>
+                  </div>
+                  <span class="status status-interview">Interview</span>
+                </div>
+                <div class="recent-row">
+                  <div class="company-icon icon-adobe">A</div>
+                  <div class="recent-details">
+                    <strong>Adobe</strong
+                    ><span>Software Development Intern</span>
+                  </div>
+                  <span class="status status-applied">Applied</span>
+                </div>
+                <div class="recent-row">
+                  <div class="company-icon icon-atlassian">At</div>
+                  <div class="recent-details">
+                    <strong>Atlassian</strong
+                    ><span>Backend Engineer Intern</span>
+                  </div>
+                  <span class="status status-assessment">Assessment</span>
+                </div>
+                <div class="recent-row">
+                  <div class="company-icon icon-amazon">am</div>
+                  <div class="recent-details">
+                    <strong>Amazon</strong><span>SDE Intern</span>
+                  </div>
+                  <span class="status status-interview">Interview</span>
+                </div>
+                <div class="recent-row">
+                  <div class="company-icon icon-flipkart">F</div>
+                  <div class="recent-details">
+                    <strong>Flipkart</strong><span>Software Intern</span>
+                  </div>
+                  <span class="status status-applied">Applied</span>
+                </div>
+              </div>
+            </section>
+
+            <section
+              class="panel progress-panel"
+              aria-labelledby="progress-title"
+            >
+              <div class="panel-heading">
+                <div>
+                  <h2 id="progress-title">Status breakdown</h2>
+                  <p>Where your applications stand</p>
+                </div>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-line">
+                    <span>Applied</span><strong>3</strong>
+                  </div>
+                  <div class="progress-track">
+                    <span style="width: 37.5%; background: #6d5efc"></span>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-line">
+                    <span>Assessment</span><strong>1</strong>
+                  </div>
+                  <div class="progress-track">
+                    <span style="width: 12.5%; background: #e6a23c"></span>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-line">
+                    <span>Interview</span><strong>2</strong>
+                  </div>
+                  <div class="progress-track">
+                    <span style="width: 25%; background: #3a86db"></span>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-line">
+                    <span>Offer</span><strong>1</strong>
+                  </div>
+                  <div class="progress-track">
+                    <span style="width: 12.5%; background: #27a47b"></span>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-line">
+                    <span>Rejected</span><strong>1</strong>
+                  </div>
+                  <div class="progress-track">
+                    <span style="width: 12.5%; background: #e16b78"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="tip-box">
+                <span aria-hidden="true">✦</span>
+                <p>
+                  <strong>Small steps matter.</strong> Keep your applications
+                  updated so you always know your next move.
+                </p>
+              </div>
+            </section>
+          </div>
+          <p class="sample-note">
+            All companies, counts, and statuses on these pages are illustrative.
+            We will replace static content with JavaScript data in Milestone 2.
+          </p>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

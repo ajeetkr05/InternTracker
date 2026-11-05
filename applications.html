@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse internship applications with InternTrack."
+    />
+    <title>My Applications | InternTrack</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="index.html" aria-label="InternTrack home"
+          ><span class="brand-mark" aria-hidden="true">IT</span
+          ><span>Intern<span class="brand-accent">Track</span></span></a
+        >
+        <p class="nav-label">WORKSPACE</p>
+        <nav class="side-nav" aria-label="Main navigation">
+          <a class="nav-link" href="index.html"
+            ><span class="nav-symbol" aria-hidden="true">▦</span> Dashboard</a
+          >
+          <a
+            class="nav-link active"
+            href="applications.html"
+            aria-current="page"
+            ><span class="nav-symbol" aria-hidden="true">▤</span> My
+            Applications</a
+          >
+          <a class="nav-link" href="application-form.html"
+            ><span class="nav-symbol" aria-hidden="true">＋</span> Add
+            Application</a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="learning-card">
+            <span class="learning-dot"></span>
+            <div>
+              <strong>Frontend stage</strong>
+              <p>Milestone 1 · HTML &amp; CSS</p>
+            </div>
+          </div>
+          <p class="sidebar-note">Built for hands-on practice.</p>
+        </div>
+      </aside>
+
+      <div class="main-area">
+        <header class="topbar">
+          <p class="breadcrumb">Workspace <span>/</span> My Applications</p>
+          <div class="topbar-right">
+            <span class="demo-indicator">Demo data</span>
+            <div class="avatar" aria-label="Sample user avatar">IT</div>
+          </div>
+        </header>
+        <main class="page-content">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">YOUR PIPELINE</p>
+              <h1>My Applications</h1>
+              <p class="page-subtitle">
+                Manage and keep track of every opportunity.
+              </p>
+            </div>
+            <a class="btn btn-primary" href="application-form.html"
+              ><span aria-hidden="true">＋</span> Add Application</a
+            >
+          </div>
+
+          <section
+            class="panel application-panel"
+            aria-labelledby="all-applications-title"
+          >
+            <div class="application-panel-heading">
+              <div>
+                <h2 id="all-applications-title">
+                  All applications <span class="count-badge">8</span>
+                </h2>
+                <p>View your internship applications in one place.</p>
+              </div>
+            </div>
+            <!-- These controls are visual only for Milestone 1. JavaScript will make them work. -->
+            <div class="filter-bar">
+              <div class="search-field">
+                <label for="search-applications">Search applications</label
+                ><input
+                  id="search-applications"
+                  type="search"
+                  placeholder="Search company or role…"
+                />
+              </div>
+              <div class="filter-field">
+                <label for="filter-status">Status</label
+                ><select id="filter-status">
+                  <option value="all">All statuses</option>
+                  <option>Applied</option>
+                  <option>Assessment</option>
+                  <option>Interview</option>
+                  <option>Offer</option>
+                  <option>Rejected</option>
+                </select>
+              </div>
+              <div class="filter-field">
+                <label for="sort-applications">Sort by</label
+                ><select id="sort-applications">
+                  <option>Newest first</option>
+                  <option>Oldest first</option>
+                  <option>Company A–Z</option>
+                </select>
+              </div>
+            </div>
+            <p class="prototype-message">
+              <span aria-hidden="true">ⓘ</span> Preview mode: Search, filtering,
+              editing, and deleting will be connected to JavaScript later.
+            </p>
+
+            <div class="table-scroll">
+              <table class="applications-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Company / Role</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Date applied</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="company-cell">
+                        <span class="company-icon icon-adobe">A</span>
+                        <div>
+                          <strong>Adobe</strong
+                          ><span>Software Development Intern</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Noida</td>
+                    <td>02 Nov 2026</td>
+                    <td><span class="status status-applied">Applied</span></td>
+                    <td>
+                      <a
+                        class="table-link"
+                        href="application-form.html"
+                        aria-label="Open form for Adobe application"
+                        >Edit <span aria-hidden="true">↗</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="company-cell">
+                        <span class="company-icon icon-atlassian">At</span>
+                        <div>
+                          <strong>Atlassian</strong
+                          ><span>Backend Engineer Intern</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Remote</td>
+                    <td>01 Nov 2026</td>
+                    <td>
+                      <span class="status status-assessment">Assessment</span>
+                    </td>
+                    <td>
+                      <a
+                        class="table-link"
+                        href="application-form.html"
+                        aria-label="Open form for Atlassian application"
+                        >Edit <span aria-hidden="true">↗</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="company-cell">
+                        <span class="company-icon icon-ms">M</span>
+                        <div>
+                          <strong>Microsoft</strong
+                          ><span>Software Engineering Intern</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Bengaluru</td>
+                    <td>29 Oct 2026</td>
+                    <td>
+                      <span class="status status-interview">Interview</span>
+                    </td>
+                    <td>
+                      <a
+                        class="table-link"
+                        href="application-form.html"
+                        aria-label="Open form for Microsoft application"
+                        >Edit <span aria-hidden="true">↗</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="company-cell">
+                        <span class="company-icon icon-amazon">am</span>
+                        <div>
+                          <strong>Amazon</strong><span>SDE Intern</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>22 Oct 2026</td>
+                    <td>
+                      <span class="status status-interview">Interview</span>
+                    </td>
+                    <td>
+                      <a
+                        class="table-link"
+                        href="application-form.html"
+                        aria-label="Open form for Amazon application"
+                        >Edit <span aria-hidden="true">↗</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="company-cell">
+                        <span class="company-icon icon-flipkart">F</span>
+                        <div>
+                          <strong>Flipkart</strong><span>Software Intern</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Bengaluru</td>
+                    <td>19 Oct 2026</td>
+                    <td><span class="status status-applied">Applied</span></td>
+                    <td>
+                      <a
+                        class="table-link"
+                        href="application-form.html"
+                        aria-label="Open form for Flipkart application"
+                        >Edit <span aria-hidden="true">↗</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="company-cell">
+                        <span class="company-icon icon-paytm">P</span>
+                        <div>
+                          <strong>Paytm</strong><span>Backend Intern</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Noida</td>
+                    <td>14 Oct 2026</td>
+                    <td>
+                      <span class="status status-rejected">Rejected</span>
+                    </td>
+                    <td>
+                      <a
+                        class="table-link"
+                        href="application-form.html"
+                        aria-label="Open form for Paytm application"
+                        >Edit <span aria-hidden="true">↗</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="company-cell">
+                        <span class="company-icon icon-salesforce">S</span>
+                        <div>
+                          <strong>Salesforce</strong
+                          ><span>Software Engineer Intern</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Remote</td>
+                    <td>09 Oct 2026</td>
+                    <td><span class="status status-offer">Offer</span></td>
+                    <td>
+                      <a
+                        class="table-link"
+                        href="application-form.html"
+                        aria-label="Open form for Salesforce application"
+                        >Edit <span aria-hidden="true">↗</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="company-cell">
+                        <span class="company-icon icon-zomato">Z</span>
+                        <div>
+                          <strong>Zomato</strong><span>Engineering Intern</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Gurugram</td>
+                    <td>08 Oct 2026</td>
+                    <td><span class="status status-applied">Applied</span></td>
+                    <td>
+                      <a
+                        class="table-link"
+                        href="application-form.html"
+                        aria-label="Open form for Zomato application"
+                        >Edit <span aria-hidden="true">↗</span></a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-footer">
+              <p>Showing <strong>8</strong> sample applications</p>
+              <span>Static HTML table · No database yet</span>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
