@@ -2,7 +2,26 @@ import { applications } from "./data.js";
 import { formatDisplayDate } from "./date.js";
 
 function renderApplication(applications) {
+  const count = document.querySelectorAll(".js-count-applications");
+
+  count.forEach((el) => {
+    el.textContent = applications.length;
+  });
+
+
   const html = document.querySelector(".js-applications");
+  html.innerHTML = "";
+
+  if (applications.length === 0) {
+    html.innerHTML = `
+        <tr>
+        <td colspan="5">
+            <strong>No Applications Yet!</strong>
+        </td>
+        </tr>
+    `;
+    return;
+  }
 
   applications.forEach((element) => {
     html.innerHTML += `
@@ -11,8 +30,7 @@ function renderApplication(applications) {
                 <div class="company-cell">
                 <span class="company-icon icon-${element.company.toLowerCase()}">${element.company.charAt(0)}</span>
                 <div>
-                    <strong>${element.company}</strong
-                    ><span>${element.role}</span>
+                    <strong>${element.company}</strong><span>${element.role}</span>
                 </div>
                 </div>
             </td>
